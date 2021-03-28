@@ -34,9 +34,7 @@ class _MyHomePage extends State<MyHomePage> {
               TextField(
                 controller: TextEditingController(text: '$name'),
                 onChanged: (val) {
-                  //setState(() {
                   name = val;
-                  //})
                 },
               ),
               ElevatedButton(
