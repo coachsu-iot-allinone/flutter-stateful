@@ -31,7 +31,14 @@ class _MyHomePage extends State<MyHomePage> {
           child: Column(
             children: [
               Text('$title'),
-              TextField(controller: TextEditingController(text: '$name')),
+              TextField(
+                controller: TextEditingController(text: '$name'),
+                onChanged: (val) {
+                  //setState(() {
+                  name = val;
+                  //})
+                },
+              ),
               ElevatedButton(
                 child: Icon(Icons.thumb_up),
                 onPressed: () => {
